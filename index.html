@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Курс по Bootstrap 5.3 — Научись верстать современные сайты</title>
+    <meta
+      name="description"
+      content="Самоучитель по Bootstrap 5.3.8: 6 модулей, 16 уроков, финальный проект. Освойте самый популярный CSS-фреймворк с нуля."
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon/B5.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/img/favicon/B5.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/favicon/B5.png"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ============================================ -->
+    <!--  HERO                                        -->
+    <!-- ============================================ -->
+    <section class="hero">
+      <div class="container position-relative" style="z-index: 2">
+        <h1>Освойте Bootstrap 5.3<br />и верстайте сайты легко</h1>
+        <p class="lead">
+          Самоучитель по самому популярному CSS-фреймворку. От «что такое класс»
+          — до собственного сайта-портфолио. Всё на русском, с живыми примерами
+          и практикой.
+        </p>
+        <a
+          href="#pricing"
+          class="btn btn-light btn-lg px-5 fw-semibold text-primary"
+          style="border-radius: 50px"
+        >
+          Купить курс →
+        </a>
+        <div class="badges">
+          <span class="badge bg-light text-dark">🔥 16 уроков</span>
+          <span class="badge bg-light text-dark">⚡ 6 модулей</span>
+          <span class="badge bg-light text-dark">🎯 Финальный проект</span>
+          <span class="badge bg-light text-dark">💻 Офлайн-доступ</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--  О КУРСЕ                                     -->
+    <!-- ============================================ -->
+    <section class="container my-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="section-title">Что это за курс?</h2>
+          <p class="fs-5 text-course mb-4">
+            Это структурированный самоучитель по Bootstrap 5.3.8 — фреймворку,
+            который используют миллионы разработчиков по всему миру.
+          </p>
+          <ul class="list-unstyled fs-6">
+            <li class="mb-2">
+              ✅ <strong>Теория без воды.</strong> Только то, что реально нужно.
+            </li>
+            <li class="mb-2">
+              ✅ <strong>Живые примеры с кодом.</strong> Видите результат и
+              сразу смотрите, как он собран.
+            </li>
+            <li class="mb-2">
+              ✅ <strong>Практика в каждом уроке.</strong> Задания для
+              закрепления материала.
+            </li>
+            <li class="mb-2">
+              ✅ <strong>Финальный проект.</strong> Сайт-портфолио для вашего
+              резюме.
+            </li>
+            <li class="mb-2">
+              ✅ <strong>Офлайн-доступ.</strong> Скачиваете архив — учитесь без
+              интернета.
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="assets/img/screenshots/lesson-with-code.jpg"
+            class="img-fluid screenshot"
+            alt="Скриншот урока с примером кода"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--  ПРОГРАММА КУРСА                             -->
+    <!-- ============================================ -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Программа курса</h2>
+          <p class="section-subtitle">
+            6 модулей · 16 уроков · финальный проект
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card module-card">
+              <div class="card-body">
+                <span class="module-num">Модуль 1</span>
+                <h5>Введение и основы</h5>
+                <p class="text-course small mb-2">2 урока</p>
+                <p class="small">
+                  Что такое Bootstrap, способы подключения, структура базового
+                  шаблона.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card module-card">
+              <div class="card-body">
+                <span class="module-num">Модуль 2</span>
+                <h5>Сетка и адаптивность</h5>
+                <p class="text-course small mb-2">3 урока</p>
+                <p class="small">
+                  Контейнеры, 12-колоночная сетка, брейкпоинты, CSS Grid.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card module-card">
+              <div class="card-body">
+                <span class="module-num">Модуль 3</span>
+                <h5>Типографика и утилиты</h5>
+                <p class="text-course small mb-2">2 урока</p>
+                <p class="small">
+                  Текст, цвета, отступы, Flexbox-утилиты, визуальные помощники.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card module-card">
+              <div class="card-body">
+                <span class="module-num">Модуль 4</span>
+                <h5>Компоненты Bootstrap</h5>
+                <p class="text-course small mb-2">5 уроков</p>
+                <p class="small">
+                  Навбары, карточки, формы, модалки, аккордеон, выпадающие
+                  списки.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card module-card">
+              <div class="card-body">
+                <span class="module-num">Модуль 5</span>
+                <h5>Кастомизация и Sass</h5>
+                <p class="text-course small mb-2">2 урока</p>
+                <p class="small">
+                  Темы, CSS-переменные, переопределение стилей, работа с Sass.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card module-card border border-success border-2">
+              <div class="card-body">
+                <span class="module-num bg-success-subtle text-success"
+                  >Модуль 6 · Финал</span
+                >
+                <h5>Финальный проект</h5>
+                <p class="text-course small mb-2">2 урока</p>
+                <p class="small">
+                  Планирование и разработка собственного сайта-портфолио.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--  ПРЕИМУЩЕСТВА                                -->
+    <!-- ============================================ -->
+    <section class="container my-5">
+      <div class="text-center">
+        <h2 class="section-title">Почему этот курс?</h2>
+        <p class="section-subtitle">Четыре причины выбрать его</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon">🎯</div>
+            <h5>Актуальность</h5>
+            <p class="small">
+              Bootstrap 5.3.8 — без jQuery, с CSS Grid и тёмной темой.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon">💻</div>
+            <h5>Практика</h5>
+            <p class="small">
+              В каждом уроке — живые примеры и задания для закрепления.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon">🚀</div>
+            <h5>Проект</h5>
+            <p class="small">
+              В финале — собственный сайт-портфолио, который не стыдно показать.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-box">
+            <div class="feature-icon">📱</div>
+            <h5>Адаптивность</h5>
+            <p class="small">
+              Курс работает на любом устройстве и без интернета.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--  СКРИНШОТЫ — 6 штук в двух рядах             -->
+    <!-- ============================================ -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Как выглядит курс</h2>
+          <p class="section-subtitle">
+            Чистый интерфейс, живые примеры, код рядом с результатом
+          </p>
+        </div>
+
+        <!-- Первый ряд -->
+        <div class="row g-4 mb-4">
+          <div class="col-md-4">
+            <img
+              src="assets/img/screenshots/main-page.jpg"
+              class="img-fluid screenshot"
+              alt="Главная страница курса"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/img/screenshots/lesson-page.jpg"
+              class="img-fluid screenshot"
+              alt="Страница урока"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/img/screenshots/code-example.jpg"
+              class="img-fluid screenshot"
+              alt="Пример кода в уроке"
+            />
+          </div>
+        </div>
+
+        <!-- Второй ряд -->
+        <div class="row g-4">
+          <div class="col-md-4">
+            <img
+              src="assets/img/screenshots/cards-buttons.jpg"
+              class="img-fluid screenshot"
+              alt="Карточки и кнопки Bootstrap"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/img/screenshots/modal-example.jpg"
+              class="img-fluid screenshot"
+              alt="Модальное окно"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/img/screenshots/forms.jpg"
+              class="img-fluid screenshot"
+              alt="Формы Bootstrap"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--  ОТЗЫВЫ                                      -->
+    <!-- ============================================ -->
+    <section class="container my-5">
+      <div class="text-center">
+        <h2 class="section-title">Отзывы студентов</h2>
+        <p class="section-subtitle">Что говорят те, кто уже прошёл курс</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <div class="avatar">А</div>
+            <p class="small mb-3">
+              «Курс отлично структурирован. Наконец-то понял, как работает сетка
+              Bootstrap. Финальный проект сделал за вечер.»
+            </p>
+            <div class="name">Алексей</div>
+            <div class="role">Frontend-разработчик</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <div class="avatar bg-success">М</div>
+            <p class="small mb-3">
+              «Мне как backend-разработчику курс зашёл идеально. Быстро, по
+              делу, без воды. Теперь могу верстать интерфейсы сам.»
+            </p>
+            <div class="name">Мария</div>
+            <div class="role">Backend-разработчик</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <div class="avatar bg-warning text-dark">И</div>
+            <p class="small mb-3">
+              «Понравилось, что можно скачать архив и учиться без интернета.
+              Удобно в поездках. Примеры кода сразу видно в браузере.»
+            </p>
+            <div class="name">Игорь</div>
+            <div class="role">Веб-дизайнер</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--  FAQ                                         -->
+    <!-- ============================================ -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-title">Частые вопросы</h2>
+          <p class="section-subtitle">Всё, что важно знать перед покупкой</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="faqLanding">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqL1"
+                  >
+                    Какие знания нужны для начала?
+                  </button>
+                </h2>
+                <div
+                  id="faqL1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqLanding"
+                >
+                  <div class="accordion-body">
+                    Обязательно — базовый HTML. Желательно — основы CSS.
+                    JavaScript не нужен — в курсе он почти не используется.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqL2"
+                  >
+                    Как я получу курс после оплаты?
+                  </button>
+                </h2>
+                <div
+                  id="faqL2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqLanding"
+                >
+                  <div class="accordion-body">
+                    После оплаты вы получите письмо со ссылкой на скачивание
+                    ZIP-архива. Распакуйте архив и откройте
+                    <code>index.html</code> в браузере — курс готов к работе.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqL3"
+                  >
+                    Нужен ли интернет для прохождения курса?
+                  </button>
+                </h2>
+                <div
+                  id="faqL3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqLanding"
+                >
+                  <div class="accordion-body">
+                    Нет, курс работает офлайн. Все материалы — HTML-файлы,
+                    которые открываются в браузере. Интернет нужен только если
+                    вы хотите использовать чат-бота.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqL4"
+                  >
+                    Сколько времени займёт прохождение?
+                  </button>
+                </h2>
+                <div
+                  id="faqL4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqLanding"
+                >
+                  <div class="accordion-body">
+                    Зависит от темпа. Если заниматься по 1–2 урока в день — 2–3
+                    недели. Можно и быстрее, если уже есть опыт в HTML и CSS.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqL5"
+                  >
+                    Можно ли получить возврат?
+                  </button>
+                </h2>
+                <div
+                  id="faqL5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqLanding"
+                >
+                  <div class="accordion-body">
+                    Да, если курс не подошёл — напишите в течение 14 дней после
+                    покупки на
+                    <a href="mailto:course.webstart@gmail.com"
+                      >course.webstart@gmail.com</a
+                    >, и мы вернём деньги.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faqL6"
+                  >
+                    Будут ли обновления курса?
+                  </button>
+                </h2>
+                <div
+                  id="faqL6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqLanding"
+                >
+                  <div class="accordion-body">
+                    Да, при выходе новых версий Bootstrap курс будет
+                    обновляться. Покупатели получают обновления бесплатно по
+                    email.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--  CTA / ФОРМА ПОКУПКИ                         -->
+    <!-- ============================================ -->
+    <section class="container" id="pricing">
+      <div class="cta-section">
+        <h2>Готовы освоить Bootstrap 5.3?</h2>
+        <p class="lead mb-4">
+          16 уроков, 6 модулей и финальный проект — всё в одном архиве
+        </p>
+        <p class="display-5 fw-bold mb-4">1 490 ₽</p>
+
+        <form
+          id="purchaseForm"
+          class="row justify-content-center g-3"
+          novalidate
+        >
+          <div class="col-md-5">
+            <input
+              type="text"
+              class="form-control"
+              id="buyerName"
+              placeholder="Ваше имя"
+              required
+            />
+            <div class="invalid-feedback text-start">Введите имя</div>
+          </div>
+          <div class="col-md-5">
+            <input
+              type="email"
+              class="form-control"
+              id="buyerEmail"
+              placeholder="Email для доступа"
+              required
+            />
+            <div class="invalid-feedback text-start">
+              Введите корректный email
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check d-inline-block text-start">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="agreeOferta"
+                required
+              />
+              <label class="form-check-label small" for="agreeOferta">
+                Я согласен с
+                <a href="assets/oferta.html" target="_blank"
+                  >публичной офертой</a
+                >
+              </label>
+              <div class="invalid-feedback">Необходимо согласие с офертой</div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check d-inline-block text-start">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="agreePrivacy"
+                required
+              />
+              <label class="form-check-label small" for="agreePrivacy">
+                Я согласен на
+                <a href="assets/privacy.html" target="_blank"
+                  >обработку персональных данных</a
+                >
+              </label>
+              <div class="invalid-feedback">
+                Необходимо согласие на обработку данных
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-3">
+            <button type="submit" class="btn btn-light btn-buy text-primary">
+              Купить курс →
+            </button>
+          </div>
+        </form>
+
+        <p class="small mt-3 mb-0 opacity-75">
+          После оплаты вы получите письмо со ссылкой на скачивание архива.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--  ФУТЕР                                       -->
+    <!-- ============================================ -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h5 class="mb-3">📘 Bootstrap 5.3 Курс</h5>
+            <p class="small text-muted mb-0">
+              Учебный курс «Основы веб-программирования».<br />
+              Все материалы предназначены для личного использования.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <h5 class="mb-3">Контакты</h5>
+            <p class="small mb-1">
+              📧
+              <a href="mailto:course.webstart@gmail.com"
+                >course.webstart@gmail.com</a
+              >
+            </p>
+            <p class="small mb-1">
+              📧
+              <a href="mailto:course.webstart@mail.ru"
+                >course.webstart@mail.ru</a
+              >
+            </p>
+            <p class="small mb-0">
+              📝
+              <a
+                href="https://forms.yandex.ru/u/6a59d6a51f1eb5581e1aad88/"
+                target="_blank"
+                rel="noopener"
+              >
+                Форма обратной связи
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-secondary my-4" />
+
+        <div class="text-center">
+          <p class="small mb-2">
+            <a href="assets/oferta.html">Публичная оферта</a> ·
+            <a href="assets/privacy.html">Политика конфиденциальности</a>
+          </p>
+          <p class="small text-muted mb-0">
+            © 2026 Учебный курс «Основы веб-программирования». Курс по Bootstrap
+            5.3.8.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Обработка формы покупки -->
+    <script>
+      document
+        .getElementById("purchaseForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("buyerName");
+          const email = document.getElementById("buyerEmail");
+          const agreeOferta = document.getElementById("agreeOferta");
+          const agreePrivacy = document.getElementById("agreePrivacy");
+
+          let isValid = true;
+
+          [name, email, agreeOferta, agreePrivacy].forEach(function (el) {
+            if (!el.checkValidity()) {
+              el.classList.add("is-invalid");
+              isValid = false;
+            } else {
+              el.classList.remove("is-invalid");
+            }
+          });
+
+          if (!isValid) return;
+
+          localStorage.setItem("buyerName", name.value.trim());
+          localStorage.setItem("buyerEmail", email.value.trim());
+
+          // Замените URL ниже на вашу ссылку Gumroad / Boosty / ЮKassa
+          const paymentUrl = "https://gumroad.com/l/ВАШ-ПРОДУКТ";
+          window.location.href = paymentUrl;
+        });
+    </script>
+
+    <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div
+      class="elfsight-app-1f127f38-c26a-429d-8ab7-aeb0f7d82fdd"
+      data-elfsight-app-lazy
+    ></div>
+
+  </body>
+</html>
