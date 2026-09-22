@@ -16,14 +16,27 @@
 ## 📄 Что внутри
 
 ```
-bootstrap-course-landing/
-├── index.html          ← лендинг с описанием курса и формой покупки
-├── oferta.html         ← публичная оферта
-├── privacy.html        ← политика конфиденциальности
-├── assets/
-│   └── img/
-│       └── favicon/    ← иконка сайта
-└── README.md
+landing/                       ← корень репозитория
+├── index.html
+├── README.md
+└── assets/
+    ├── oferta.html
+    ├── privacy.html
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   └── form.js
+    └── img/
+        ├── favicon/
+        │   └── B5.png
+        └── screenshots/
+            ├── cards-buttons.jpg
+            ├── code-example.jpg
+            ├── forms.jpg
+            ├── lesson-page.jpg
+            ├── lesson-with-code.jpg
+            ├── main-page.jpg
+            └── modal-example.jpg
 ```
 
 ---
