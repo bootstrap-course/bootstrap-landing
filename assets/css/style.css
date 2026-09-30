@@ -88,13 +88,17 @@
 
     /* ---------- Скриншоты ---------- */
     .screenshot {
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  transition: transform 0.25s ease;
-  width: 100%;
-  height: auto;
-  display: block;    /* ← эти три строки добавлены */
-}
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .screenshot:hover {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+    }
 
     /* ---------- Отзывы ---------- */
     .testimonial {
@@ -125,7 +129,10 @@
       color: #0d6efd;
       font-weight: 600;
     }
-    .accordion-button:focus { box-shadow: none; }
+    /* Возвращаем индикацию фокуса для доступности (клавиатурная навигация) */
+    .accordion-button:focus {
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
 
     /* ---------- CTA / Форма ---------- */
     .cta-section {
@@ -136,6 +143,7 @@
       border-radius: 24px;
       margin: 60px 0;
     }
+
     .cta-section h2 { font-weight: 800; font-size: 2.2rem; }
     .cta-section .lead { opacity: 0.92; }
     .cta-section .form-control {
@@ -143,9 +151,11 @@
       padding: 12px 16px;
       border: none;
     }
+
     .cta-section .form-control:focus {
       box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.3);
     }
+
     .cta-section .btn-buy {
       border-radius: 10px;
       padding: 12px 24px;
@@ -153,17 +163,84 @@
       font-size: 1.05rem;
       width: 100%;
     }
+
     .cta-section .form-check-label a {
       color: #fff;
       text-decoration: underline;
     }
-    
-    .text-muted {
+
+    /* ---------- Текстовые утилиты ----------
+       ВАЖНО: .text-muted переопределён ТОЛЬКО для футера (тёмный фон).
+       Глобальное переопределение делало бы текст невидимым на светлых
+       секциях (Bootstrap-овский .text-muted — серый, работает везде). */
+    footer .text-muted {
       color: rgb(175 195 214 / 75%) !important;
     }
 
+    /* .text-course — акцентный текст (темнее обычного body-color).
+       Используется только на светлых фонах.
+       TODO: переименовать в более семантичное имя (например, .text-strong),
+             если потребуется использовать на тёмных фонах. */
     .text-course {
       color: rgb(5 14 21 / 75%) !important;
+    }
+
+    /* ---------- Оферта ----------
+       ВАЖНО: стили обёрнуты в .oferta-page и .oferta-container, чтобы
+       НЕ влиять на главную страницу (index.html).
+       В oferta.html и privacy.html на <body> стоит класс oferta-page. */
+    body.oferta-page {
+      background: #f8f9fa;
+    }
+
+    .oferta-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .oferta-container h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .oferta-container h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .oferta-container p,
+    .oferta-container li {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .oferta-container .meta {
+      color: #6c757d;
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+
+    /* Планшеты: добавляем боковые отступы, чтобы карточка не прилипала
+       к краям окна в диапазоне 577–800px (раньше отступы появлялись
+       только на ≤576px). */
+    @media (max-width: 992px) {
+      .oferta-container {
+        margin: 30px 20px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .oferta-container {
+        padding: 25px 20px;
+        margin: 20px 15px;
+      }
     }
 
     /* ---------- Футер ---------- */
@@ -172,6 +249,7 @@
       color: #fff;
       padding: 40px 0 30px;
     }
+
     footer a { color: #adb5bd; text-decoration: none; }
     footer a:hover { color: #fff; }
 
